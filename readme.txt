@@ -1,0 +1,1 @@
+This is test project, that unites and Telegram bot, JPA and REST

@@ -1,0 +1,23 @@
+server:
+  port: 9092
+  undertow:
+    ioThreads: 15
+    workerThreads: 150
+    accesslog:
+      enabled: true
+  compression:
+    enabled: true
+    mimeTypes: text/xml, text/css, text/html, application/json
+    minResponseSize: 4096
+
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  datasource:
+    name: botDb
+    username: root
+    password: root
+    url: jdbc:h2:mem:botDb
+    driver-class-name: org.h2.Driver
+
+
